@@ -40,7 +40,7 @@
     krita
     davinci-resolve
     gimp
-    xivlauncher
+    #xivlauncher - Doesn't launch, use flatpak for now.
     
     # Audio stuff
     mixxx
