@@ -91,7 +91,16 @@
     in
     {
       enable = true;
-      theme = spicePkgs.themes.catppuccin;
+      theme = spicePkgs.themes.burntSienna;
+      enabledExtensions = with spicePkgs.extensions; [
+        adblockify
+        shuffle
+        bookmark
+        wikify
+        featureShuffle
+        songStats
+        starRatings
+      ];
     };
     
   # Home settings
