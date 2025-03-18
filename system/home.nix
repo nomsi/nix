@@ -54,7 +54,28 @@
     gnomeExtensions.user-themes
     gnomeExtensions.weather-oclock
     gnomeExtensions.spotify-controls
+    gnomeExtensions.bing-wallpaper-changer
+    gnomeExtensions.blur-my-shell
   ];
+
+  # Dconf
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/shell" = {
+        # `gnome-extensions list` for a list
+        enabled-extensions = [
+          "gsconnect@andyholmes.github.io"
+          "blur-my-shell@aunetx"
+          "weatheroclock@CleoMenezesJr.github.io"
+          "BingWallpaper@ineffable-gmail.com"
+          "dash-to-dock@micxgx.gmail.com"
+          "spotify-controls@Sonath21"
+        ];
+      };
+      "org/gnome/desktop/interface".show-battery-percentage = true;
+    };
+  };
   
   # Git
   programs.git = {
