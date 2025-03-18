@@ -161,17 +161,6 @@
     nssmdns4 = true;
     openFirewall = true;
   };
-  
-  # Mount 2nd harddrive (sda1)
-  fileSystems."/home/emi/Dump" = {
-    device = "/dev/disk/by-uuid/f840d02d-e4ec-4b16-bd01-d1edc203c503";
-    fsType = "btrfs";
-    options = [
-      "users"
-      "defaults"
-      "noatime"
-    ];
-  };
 
   # Garbage Collection
   nix.gc = {
