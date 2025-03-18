@@ -98,7 +98,7 @@
     checkReversePath = "loose";
   };
   
-  # Docker
+  # Docker (Pathing is broken)
   virtualisation.docker.enable = true;
   virtualisation.docker.rootless = {
     enable = true;
