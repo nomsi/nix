@@ -74,14 +74,14 @@
           "user-theme@gnome-shell-extensions.gcampax.github.com"
         ];
       };
-      "org/gnome/desktop/interface".show-battery-percentage = true;
+      "org/gnome/desktop/interface".show-battery-percentage = false;
     };
   };
 
   # GSConnect
   services.kdeconnect = {
     enable = true;
-    package = pkgs.kdePackages.kdeconnect-kde;
+    package = pkgs.gnomeExtensions.gsconnect;
     indicator = true;
   };
   
