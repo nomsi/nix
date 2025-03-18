@@ -103,10 +103,16 @@
       ];
     };
 
-  # GSConnect
+  # Gnome Extensions
   programs.gnome-shell = {
     enable = true;
-    extensions = [{ package = pkgs.gnomeExtensions.gsconnect; }];
+    extensions = with pkgs.gnomeExtensions; [
+      gsconnect
+      dash-to-dock
+      user-themes
+      weather-oclock
+      spotify-controls
+    ];
   };
     
   # Home settings
