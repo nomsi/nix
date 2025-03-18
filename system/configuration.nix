@@ -114,6 +114,12 @@
   };
   
   services.flatpak.enable = true;
+
+  # GSConnect
+  programs.kdeconnect = {
+    enable = true;
+    package = pkgs.gnomeExtensions.gsconnect;
+  }
   
   # Virtualisation
   virtualisation.libvirtd = {
