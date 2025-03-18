@@ -99,6 +99,13 @@
     allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
     allowedUDPPortRanges = [ { from = 1714; to = 1764; } ];
   };
+
+  # GSConnect
+  services.kdeconnect = {
+    enable = true;
+    package = pkgs.gnomeExtensions.gsconnect;
+    indicator = true;
+  };
   
   # Docker (Pathing is broken)
   virtualisation.docker.enable = true;
