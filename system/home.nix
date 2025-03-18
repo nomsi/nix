@@ -77,6 +77,12 @@
       "org/gnome/desktop/interface".show-battery-percentage = true;
     };
   };
+
+  # GSConnect
+  programs.kdeconnect = {
+    enable = true;
+    package = pkgs.gnomeExtensions.gsconnect;
+  };
   
   # Git
   programs.git = {
