@@ -104,7 +104,6 @@
   programs.kdeconnect = {
     enable = true;
     package = pkgs.gnomeExtensions.gsconnect;
-    indicator = true;
   };
   
   # Docker (Pathing is broken)
