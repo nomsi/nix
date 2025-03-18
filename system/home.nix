@@ -27,7 +27,7 @@
     nerdfonts
     protonup-qt
     lutris
-    bottles
+    #bottles Mouse issues, use Flatpak version
     discord
     vscode
     looking-glass-client
