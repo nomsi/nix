@@ -71,6 +71,7 @@
           "BingWallpaper@ineffable-gmail.com"
           "dash-to-dock@micxgx.gmail.com"
           "spotify-controls@Sonath21"
+          "user-theme@gnome-shell-extensions.gcampax.github.com"
         ];
       };
       "org/gnome/desktop/interface".show-battery-percentage = true;
