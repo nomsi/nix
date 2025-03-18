@@ -96,6 +96,8 @@
   networking.firewall = {
     enable = true;
     checkReversePath = "loose";
+    allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
+    allowedUDPPortRanges = allowedTCPPortRanges;
   };
   
   # Docker (Pathing is broken)
@@ -114,7 +116,7 @@
   };
   
   services.flatpak.enable = true;
-  
+
   # Virtualisation
   virtualisation.libvirtd = {
     enable = true;
