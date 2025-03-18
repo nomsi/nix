@@ -104,7 +104,7 @@
     };
 
   # GSConnect
-  home-manager.users.emi.programs.gnome-shell = {
+  programs.gnome-shell = {
     enable = true;
     extensions = [{ package = pkgs.gnomeExtensions.gsconnect; }];
   };
