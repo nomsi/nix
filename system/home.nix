@@ -47,6 +47,13 @@
     yabridge
     lmms
     ardour
+
+    # Gnome Extensions
+    gnomeExtensions.gsconnect
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.user-themes
+    gnomeExtensions.weather-oclock
+    gnomeExtensions.spotify-controls
   ];
   
   # Git
@@ -102,18 +109,6 @@
         starRatings
       ];
     };
-
-  # Gnome Extensions
-  programs.gnome-shell = {
-    enable = true;
-    extensions = with pkgs.gnomeExtensions; [
-      gsconnect
-      dash-to-dock
-      user-themes
-      weather-oclock
-      spotify-controls
-    ];
-  };
     
   # Home settings
   home.stateVersion = "24.11";
