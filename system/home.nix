@@ -45,7 +45,7 @@
     # Audio stuff
     mixxx
     yabridge
-    reaper
+    lmms
     ardour
   ];
   
